@@ -52,7 +52,7 @@ export const DynamicReelComposition: React.FC<DynamicVideoProps> = ({
 
   return (
     <AbsoluteFill className="dyn-root" style={{ backgroundColor: '#020c1b' }}>
-      <Sequence from={-600}>
+      <Sequence from={0}>
         <Audio src={audioUrl.startsWith('http') ? audioUrl : staticFile(audioUrl)} volume={bgVolume} />
       </Sequence>
 
