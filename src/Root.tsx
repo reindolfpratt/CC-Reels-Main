@@ -55,7 +55,7 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={week1[0] as unknown as DynamicVideoProps}
         calculateMetadata={({ props }) => {
-          const seconds = (props as DynamicVideoProps).durationInSeconds ?? 30;
+          const seconds = (props as unknown as DynamicVideoProps).durationInSeconds ?? 30;
           const contentFrames = Math.round(seconds * FPS);
           const totalFrames = contentFrames + CTA_FRAMES;
           return {

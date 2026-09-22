@@ -1,10 +1,10 @@
-# Cohby Consult - Automated Reel Generator & Publisher
+# Cohby Global - Automated Reel Generator & Publisher
 
 
 SHORTCUT: COMMAND TO RUN ALL: npm run start-week
 
 
-This repository contains the complete A-to-Z automation system for generating, scheduling, and automatically publishing marketing videos for Cohby Consult.
+This repository contains the complete A-to-Z automation system for generating, scheduling, and automatically publishing marketing videos for Cohby Global.
 
 ## System Architecture
 

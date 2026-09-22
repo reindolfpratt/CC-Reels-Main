@@ -3,3 +3,6 @@ out/
 .env
 .DS_Store
 public/music/
+.claude/
+.sfdx/
+*.part

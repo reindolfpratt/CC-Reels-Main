@@ -33,11 +33,11 @@ async function generateData() {
       messages: [
         {
           role: "system",
-          content: "You are a content JSON generator for Cohby Consult. Return ONLY a JSON array."
+          content: "You are a content JSON generator for Cohby Global. Return ONLY a JSON array."
         },
         {
           role: "user",
-          content: `Generate 14 NEW and UNIQUE video scripts for Cohby Consult (a premium study abroad firm for UK/Canada/Europe).
+          content: `Generate 14 NEW and UNIQUE video scripts for Cohby Global (a premium study abroad firm for UK/Canada/Europe).
             
             VALUE-FIRST INSTRUCTIONS:
             - Content MUST be strictly educational and high-value for students. 

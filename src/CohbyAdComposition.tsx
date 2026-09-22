@@ -48,7 +48,7 @@ export const CohbyAdComposition: React.FC = () => {
               transform: `translateY(${100 - titleTranslateY * 100}px)` 
             }}
           >
-            <h2 className="cohby-brand">COHBY CONSULT</h2>
+            <h2 className="cohby-brand">COHBY GLOBAL</h2>
             <h1 className="cohby-title">
               Your Gateway to Global Education
             </h1>

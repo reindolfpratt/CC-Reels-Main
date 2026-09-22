@@ -7,9 +7,9 @@ const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SER
 const weekData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/week1.json'), 'utf8'));
 
 const captions = {
-  'kickoff-global': "70% of students wish they'd started 6 months earlier. Don't be one of them. Your global education journey starts now. 🌍🎓 #StudyAbroad #CohbyConsult #GlobalEducation",
-  'why-choose': "Generic applications get generic results. Cohby Consult knows your story and builds an application around it. 📋✨ #StudyAbroad #Education #Ghana",
-  'spotlight-canada': "Canada's PGWP gives you 3 years of work rights after graduation, a direct path to PR. Did you know this when you were choosing? 🍁 #StudyInCanada #CohbyConsult",
+  'kickoff-global': "70% of students wish they'd started 6 months earlier. Don't be one of them. Your global education journey starts now. 🌍🎓 #StudyAbroad #CohbyGlobal #GlobalEducation",
+  'why-choose': "Generic applications get generic results. Cohby Global knows your story and builds an application around it. 📋✨ #StudyAbroad #Education #Ghana",
+  'spotlight-canada': "Canada's PGWP gives you 3 years of work rights after graduation, a direct path to PR. Did you know this when you were choosing? 🍁 #StudyInCanada #CohbyGlobal",
   'spotlight-uk': "The UK's 2-year Graduate Route Visa requires zero job offer. Work anywhere across the UK after you graduate. 🇬🇧 #StudyInUK #GraduateVisa",
   'personal-statement': "Admissions officers read hundreds of 'I have always been passionate about...' Every day. Start differently. Start with a story. ✍️ #PersonalStatement #StudyAbroad",
   'documents': "The #1 reason strong applicants get rejected? Incorrect or incomplete documents. Get it right the first time. 📁 #StudyAbroad #UniversityApplication",
@@ -19,8 +19,8 @@ const captions = {
   'austria': "Vienna: 4-time winner of the world's most liveable city. World-class degree. Lower cost. High employability across Europe. 🇦🇹 #StudyInAustria",
   'departure': "Acceptance letter received? You're on Step 3 of 12. Don't miss your enrolment deadline, visa, or housing window. 🛫 #StudyAbroad #StudentLife",
   'accommodation': "University housing fills within days of offer letters. Apply the same week. Your comfort directly affects your grades. 🏠 #StudentHousing #StudyAbroad",
-  'inspiration': "Every student we've helped once sat exactly where you are. The only difference? They made one call. 📞 #Motivation #StudyAbroad #CohbyConsult",
-  'consultation': "30 minutes with Cohby Consult. A personalised shortlist, a realistic timeline, and a complete plan, at zero cost. What do you have to lose? 📅 #FreeConsultation #StudyAbroad",
+  'inspiration': "Every student we've helped once sat exactly where you are. The only difference? They made one call. 📞 #Motivation #StudyAbroad #CohbyGlobal",
+  'consultation': "30 minutes with Cohby Global. A personalised shortlist, a realistic timeline, and a complete plan, at zero cost. What do you have to lose? 📅 #FreeConsultation #StudyAbroad",
   'uk-life': "Adjusting to your new UK life takes time, but with the right preparation, you will thrive inside and outside the classroom. 🇬🇧 #StudyInUK",
   'scholarships': "Scholarship competition is fierce. Start early, highlight your unique leadership skills, and submit an application that demands attention. 🎓💰 #Scholarships"
 };
@@ -102,7 +102,7 @@ async function uploadAll() {
       status: 'pending',
       scheduled_at: scheduledAt,
       storage_url: publicUrl,
-      social_caption: video.caption || `Cohby Consult 🌍 #StudyAbroad #Education`
+      social_caption: video.caption || `Cohby Global 🌍 #StudyAbroad #Education`
     });
 
     console.log(`✅ Uploaded ${filename} (Scheduled for ${scheduledAt})`);

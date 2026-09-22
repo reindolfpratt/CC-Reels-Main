@@ -75,7 +75,7 @@ export const UKChallengesComposition: React.FC = () => {
       <Sequence from={720} durationInFrames={360}>
         <AbsoluteFill className="uk-cta-bg" style={{ opacity: interpolate(frame, [720, 760], [0, 1], { extrapolateRight: 'clamp' }) }}>
           <div className="uk-cta-wrapper" style={{ transform: `scale(${spring({ frame: frame - 720, fps, config: { damping: 10 } })})` }}>
-            <h2 className="uk-brand">COHBY CONSULT</h2>
+            <h2 className="uk-brand">COHBY GLOBAL</h2>
             <p className="uk-cta-text">But don't worry, we're here to guide you every step of the way!</p>
             <div className="uk-cta-button" style={{ transform: `scale(${interpolate(frame, [900, 930], [1, 1.1])})` }}>
               www.cohbyconsult.com

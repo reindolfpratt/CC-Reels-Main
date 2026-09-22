@@ -17,13 +17,13 @@ export const GlobalCTA: React.FC = () => {
         {/* Placeholder for the user's actual logo.png */}
         {/* Since the client uploads 'logo.png' we render it if it exists, otherwise fall back to styled text */}
         <div className="gcta-logo-wrapper">
-          <img src="/public/images/logo.png" className="gcta-logo-img" alt="Cohby Consult Logo" onError={(e) => {
+          <img src="/public/images/logo.png" className="gcta-logo-img" alt="Cohby Global Logo" onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';
               document.getElementById('fallback-logo')!.style.display = 'block';
             }} 
           />
           <h1 id="fallback-logo" className="gcta-brand-fallback" style={{ display: 'none' }}>
-            COHBY <span className="gcta-brand-sub">CONSULT</span>
+            COHBY <span className="gcta-brand-sub">GLOBAL</span>
           </h1>
         </div>
 
