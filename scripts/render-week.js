@@ -29,18 +29,22 @@ for (let i = 0; i < videosToRender; i++) {
   console.log(`   Duration: ${contentSeconds}s + 4s CTA = ${totalFrames / FPS}s total`);
   console.log(`================================`);
   
-  // Pass duration as part of props so the composition can read it
   const videoWithFrames = { ...video, contentFrames, totalFrames };
-  const propsString = JSON.stringify(videoWithFrames).replace(/"/g, '\\"');
+  const tempPropsFile = path.resolve(__dirname, `../out/temp_props_${video.id}.json`);
+  fs.writeFileSync(tempPropsFile, JSON.stringify(videoWithFrames, null, 2), 'utf8');
   
   try {
     execSync(
-      `npx remotion render src/index.ts DynamicReel ${outputName} --props="${propsString}" --frames=0-${totalFrames - 1}`,
+      `npx remotion render src/index.ts DynamicReel "${outputName}" --props="${tempPropsFile}" --frames=0-${totalFrames - 1}`,
       { stdio: 'inherit' }
     );
     console.log(`✅ Success: Generated ${outputName}`);
   } catch (err) {
     console.error(`❌ Failed to render ${video.id}`, err);
+  } finally {
+    if (fs.existsSync(tempPropsFile)) {
+      fs.unlinkSync(tempPropsFile);
+    }
   }
 }
 
