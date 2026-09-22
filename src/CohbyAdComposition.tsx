@@ -90,7 +90,7 @@ export const CohbyAdComposition: React.FC = () => {
           >
             <h2 className="cohby-cta-heading">Start Your Journey Today</h2>
             <div className="cohby-cta-button">
-              www.cohbyconsult.com
+              www.cohbyglobal.com
             </div>
           </div>
         </Sequence>

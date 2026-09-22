@@ -78,7 +78,7 @@ export const UKChallengesComposition: React.FC = () => {
             <h2 className="uk-brand">COHBY GLOBAL</h2>
             <p className="uk-cta-text">But don't worry, we're here to guide you every step of the way!</p>
             <div className="uk-cta-button" style={{ transform: `scale(${interpolate(frame, [900, 930], [1, 1.1])})` }}>
-              www.cohbyconsult.com
+              www.cohbyglobal.com
             </div>
           </div>
         </AbsoluteFill>

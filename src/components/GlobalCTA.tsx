@@ -34,7 +34,7 @@ export const GlobalCTA: React.FC = () => {
             <div className="gcta-card-icon">🌐</div>
             <div className="gcta-card-content">
               <span className="gcta-card-label">Website</span>
-              <span className="gcta-card-value">www.cohbyconsult.com</span>
+              <span className="gcta-card-value">www.cohbyglobal.com</span>
             </div>
           </div>
           
