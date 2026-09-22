@@ -30,10 +30,10 @@ export const GlobalCTA: React.FC = () => {
         <h2 className="gcta-tagline">Your Pathway to Global Education Excellence</h2>
 
         <div className="gcta-grid">
-          <div className="gcta-card">
+          <div className="gcta-card gcta-card-primary">
             <div className="gcta-card-icon">🌐</div>
             <div className="gcta-card-content">
-              <span className="gcta-card-label">Website</span>
+              <span className="gcta-card-label">Official Website</span>
               <span className="gcta-card-value">www.cohbyglobal.com</span>
             </div>
           </div>

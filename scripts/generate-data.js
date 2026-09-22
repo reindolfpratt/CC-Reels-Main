@@ -40,9 +40,10 @@ async function generateData() {
           content: `Generate 14 NEW and UNIQUE video scripts for Cohby Global (a premium study abroad firm for UK/Canada/Europe).
             
             VALUE-FIRST INSTRUCTIONS:
-            - Content MUST be strictly educational and high-value for students. 
+            - Content MUST be strictly educational, high-value, and viral for students. 
             - Topics: Scholarship hacks, SOP writing, Visa tips, UK/Canada life, Part-time job strategies.
-            - Write in FULL, NATURAL sentences. Avoid robotic shorthand like "NHS free". 
+            - CRITICAL PACING RULE: Maximum 10 to 14 words per scene! Never write long paragraphs or complex multi-clause sentences.
+            - Keep each line punchy, clear, and immediate so viewers can read it in 3 seconds.
             - IMPORTANT: Do NOT include internal labels like "Scene 1:", "Part 2:", or "Text:". Just the content.
             - Existing topics to avoid: ${existingTopics}. 
             - Constraints: No em-dashes (—). Exactly 3 scenes per video. 
@@ -107,7 +108,19 @@ async function generateData() {
       "https://images.unsplash.com/photo-1558023784-f8343393cb06?q=80&w=1080&h=1920&fit=crop",
       "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1080&h=1920&fit=crop",
       "https://images.unsplash.com/photo-1471974507711-fe913f4b4509?q=80&w=1080&h=1920&fit=crop",
-      "https://images.unsplash.com/photo-1551485645-e499a58eab2c?q=80&w=1080&h=1920&fit=crop"
+      "https://images.unsplash.com/photo-1551485645-e499a58eab2c?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1568792923760-d70635a89fa5?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1080&h=1920&fit=crop",
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1080&h=1920&fit=crop"
     ];
 
     const energeticTracks = [

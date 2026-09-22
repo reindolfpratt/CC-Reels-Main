@@ -182,30 +182,40 @@ const SceneContent: React.FC<{ scene: SceneData; duration: number; index: number
 
 
 
-      {/* Text block — word-by-word stagger */}
+      {/* Text block — centered modern frosted glass capsule */}
       <div
         style={{
           position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          padding: '60px',
-          paddingBottom: '120px',
+          top: '50%',
+          left: '50%',
+          transform: `translate(-50%, -50%) translateX(${textX}px)`,
+          width: '88%',
+          maxWidth: '920px',
+          backgroundColor: 'rgba(7, 16, 34, 0.72)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          borderRadius: 36,
+          border: '1.5px solid rgba(255, 255, 255, 0.22)',
+          boxShadow: '0 25px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+          padding: '44px 48px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           opacity: textOpacity * textExit,
-          transform: `translateX(${textX}px)`,
+          boxSizing: 'border-box',
         }}
       >
         <p
           style={{
             fontFamily: 'Inter, sans-serif',
-            fontSize: '64px',
+            fontSize: '58px',
             color: 'white',
-            textAlign: 'left',
-            lineHeight: 1.35,
+            textAlign: 'center',
+            lineHeight: 1.38,
             fontWeight: 800,
             margin: 0,
-            textShadow: '0 4px 20px rgba(0,0,0,0.8)',
             letterSpacing: '-0.5px',
+            textShadow: '0 3px 15px rgba(0,0,0,0.7)',
           }}
         >
           {words.map((word, wi) => {
