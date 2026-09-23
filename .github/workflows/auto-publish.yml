@@ -2,8 +2,8 @@ name: 🚀 Auto-Publish Daily Reels
 
 on:
   schedule:
-    # Runs at 08:00 UTC and 17:00 UTC every day
-    - cron: '0 8,17 * * *'
+    # Runs at 08:00 UTC every day
+    - cron: '0 8 * * *'
   workflow_dispatch: # Allows manual triggering from the GitHub Actions UI
 
 jobs:
